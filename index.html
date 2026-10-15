@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Medicamente">
+  <meta name="theme-color" content="#f4f6f8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111418" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/style.css?v=1">
+  <title>Medicamente</title>
+</head>
+<body>
+  <header class="topbar">
+    <h1 id="title">Medicamente</h1>
+    <span id="mode" class="mode"></span>
+  </header>
+
+  <main id="view"><p class="muted center">Se încarcă…</p></main>
+
+  <nav class="tabs three" id="tabs">
+    <button data-tab="sertar" class="active"><span class="ic">💊</span>Sertar<span class="count" id="expCount"></span></button>
+    <button data-tab="adauga"><span class="ic">➕</span>Adaugă</button>
+    <button data-tab="setari"><span class="ic">⚙️</span>Setări</button>
+  </nav>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script type="module" src="js/app.js?v=1"></script>
+</body>
+</html>
